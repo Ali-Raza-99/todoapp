@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCEpWhQVfT9CL7DkbtdwuTljSDHlvjd-HI",
+            authDomain: "todo-app-fdcfb.firebaseapp.com",
+            databaseURL: "https://todo-app-fdcfb-default-rtdb.firebaseio.com",
+            projectId: "todo-app-fdcfb",
+            storageBucket: "todo-app-fdcfb.appspot.com",
+            messagingSenderId: "337611324733",
+            appId: "1:337611324733:web:7a029cbd35c1db6e3dd954",
+            measurementId: "G-NHQZ6C812N"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <input type="text" name="" id="inp">
+        <button onclick="addTodo()" type="button" class="btn btn-primary">AddTodo</button>
+        <button onclick="deleteAll()" type="button" class="btn btn-danger">DeleteAll</button>
+
+    </div>
+    <br><br>
+    <div class="container">
+        <ul id="mylist">
+
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

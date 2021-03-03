@@ -1,0 +1,14 @@
+.container{
+    text-align: center;
+}
+
+.liststyle{
+    color: black;
+    list-style-type: none;
+   
+} 
+li{
+    width: 90%;
+    height: 40px;
+    background-color: aqua;
+}
